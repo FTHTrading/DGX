@@ -52,7 +52,7 @@ window.DignityApiPlayground = (function() {
     try {
       params = JSON.parse(paramsInput.value);
     } catch (err) {
-      alert("Invalid JSON parameters: " + err.message);
+      console.warn("Invalid JSON parameters: " + err.message);
       return;
     }
 

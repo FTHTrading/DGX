@@ -134,7 +134,7 @@ window.DignityMineEsg = (function() {
     const tons = Math.ceil(goldOz * rate);
 
     if (credit.availableTons < tons) {
-      alert("Insufficient available carbon credits in this vintage pool.");
+      console.warn("Insufficient available carbon credits in this vintage pool.");
       return;
     }
 

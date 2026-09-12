@@ -41,14 +41,36 @@ window.DignityApp = (function() {
 
   // View Navigation
   function switchView(viewName) {
-    navTabs.forEach(t => {
-      t.classList.toggle('active', t.getAttribute('data-view') === viewName);
+    const tabs = document.querySelectorAll('.nav-tab');
+    const panels = document.querySelectorAll('.view-panel');
+
+    tabs.forEach(t => {
+      const match = t.getAttribute('data-view') === viewName;
+      t.classList.toggle('active', match);
+      if (match) {
+        t.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      }
     });
 
-    viewPanels.forEach(p => {
+    panels.forEach(p => {
       p.classList.toggle('active', p.id === `view-${viewName}`);
     });
+
+    if (viewName === 'neuromap' && typeof initNeuromap === 'function') {
+      initNeuromap();
+    }
   }
+
+  // Bind click listener to all tabs
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.nav-tab').forEach(tab => {
+      tab.addEventListener('click', (e) => {
+        e.preventDefault();
+        const view = tab.getAttribute('data-view');
+        if (view) switchView(view);
+      });
+    });
+  });
 
   navTabs.forEach(tab => {
     tab.addEventListener('click', () => {
@@ -668,18 +690,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Also support tab switching for all view panels
-  const tabs = document.querySelectorAll('.nav-tab');
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      tabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-      const viewId = tab.getAttribute('data-view');
-      document.querySelectorAll('.view-panel').forEach(p => p.classList.remove('active'));
-      const targetPanel = document.getElementById(`view-${viewId}`);
-      if (targetPanel) {
-        targetPanel.classList.add('active');
-      }
-    });
-  });
+// Primary tab switcher handled by DignityApp.switchView
 });
