@@ -1,0 +1,13 @@
+{
+  "name": "@dgx/l1-sdk",
+  "version": "1.0.0",
+  "description": "Official TypeScript SDK for the DGX Sovereign L1 Network & Mine Streaming Forge",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": ["dgx", "gold", "rwa", "streaming", "quantum", "dilithium"],
+  "author": "FTH Trading / UnyKorn LLC",
+  "license": "Commercial"
+}

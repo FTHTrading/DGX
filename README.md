@@ -35,6 +35,10 @@
 - [⚙️ Sovereign L1 Rust Node Engine](#️-sovereign-l1-rust-node-engine)
 - [📊 Phased Capital Formation Timeline & Spinoff Roadmap](#-phased-capital-formation-timeline--spinoff-roadmap)
 - [🌐 Web Portal & Investor Deck Terminal](#-web-portal--investor-deck-terminal)
+- [📚 Developer Documentation & APIs](#-developer-documentation--apis)
+- [📦 Official Client SDKs](#-official-client-sdks)
+- [🛠️ Operational Runbooks & SOPs](#️-operational-runbooks--sops)
+- [📅 Master 36-Month Timelines & Milestones](#-master-36-month-timelines--milestones)
 - [🚀 Quickstart: Build & Execution](#-quickstart-build--execution)
 - [🛡️ Regulatory & Compliance Perimeter](#️-regulatory--compliance-perimeter)
 - [📄 Commercial License](#-commercial-license)
@@ -319,6 +323,43 @@ The [`web/`](web/) directory contains the complete institutional web interface:
 * **Dark & Institutional Light Mode Support**: Glassmorphic UI matching institutional terminal standards.
 
 ---
+
+---
+
+## 📚 Developer Documentation & APIs
+
+Comprehensive documentation for institutional integration, node operations, and contract interfaces:
+
+* **[`docs/API_REFERENCE.md`](docs/API_REFERENCE.md)**: Full JSON-RPC v2.0 specification (`dgx_getBarPassport`, `dgx_submitDvpOrder`, `dgx_queryQrngBeacon`, `dgx_getConcessionPassport`).
+* **[`docs/SDK_QUICKSTART.md`](docs/SDK_QUICKSTART.md)**: Multi-language integration guide with runnable examples in TypeScript, Python, Rust, and cURL.
+* **[`docs/VALIDATOR_OPERATOR_GUIDE.md`](docs/VALIDATOR_OPERATOR_GUIDE.md)**: Hardware requirements, sentry node architecture, Dilithium-3 keygen, and PoG-QBFT bonding.
+* **[`docs/SMART_CONTRACT_INTEGRATION.md`](docs/SMART_CONTRACT_INTEGRATION.md)**: Solidity ABIs, event signatures, and exchange escrow integration patterns.
+
+---
+
+## 📦 Official Client SDKs
+
+Pre-built institutional client packages ready for production deployment:
+
+* **[`sdk/typescript/`](sdk/typescript/)**: `@dgx/l1-sdk` — Typed TypeScript/JavaScript client for web apps, node backends, and institutional order routers.
+* **[`sdk/python/`](sdk/python/)**: `dgx-sdk` — Python client for algorithmic trading desks, quantitative analytics, and mining telemetry oracles.
+
+---
+
+## 🛠️ Operational Runbooks & SOPs
+
+* **[`operations/NI43_101_CONCESSION_AUDIT_PLAYBOOK.md`](operations/NI43_101_CONCESSION_AUDIT_PLAYBOOK.md)**: Geological reserve evaluation, QP sign-off standards, and 2.5x coverage ratio underwriting.
+* **[`operations/REFINERY_DELIVERY_SOP.md`](operations/REFINERY_DELIVERY_SOP.md)**: Doré transport, Swiss refinery fire assay at Valcambi/PAMP, and serialized Bar Passport enrollment.
+* **[`operations/DVP_ATOMIC_SETTLEMENT_PLAYBOOK.md`](operations/DVP_ATOMIC_SETTLEMENT_PLAYBOOK.md)**: Broker-dealer OTC clearing and 1-second atomic DvP trade execution.
+
+---
+
+## 📅 Master 36-Month Timelines & Milestones
+
+The complete multi-year execution roadmap is detailed in **[`TIMELINES_AND_MILESTONES.md`](TIMELINES_AND_MILESTONES.md)**:
+* **Months 01 – 12 (Phase 1)**: Legal Trust Enclave, $50M Series A, 15k oz Zurich vaulting, L1 Testnet Genesis.
+* **Months 13 – 24 (Phase 2)**: Division 3 Royalty Spin-Off, $100M Streaming Facility, Mines #1-3 online, Net-Zero ESG tracking.
+* **Months 25 – 36 (Phase 3 & 4)**: Division 4 ATS Exchange Desk, BitGo Qualified Custody, TSX/NYSE Dual-Track Public IPO ($300M+ raise, $4B+ vaulted assets).
 
 ## 🚀 Quickstart: Build & Execution
 
