@@ -1,0 +1,15 @@
+[package]
+name = "dgx-consensus"
+version = "0.1.0"
+edition = "2021"
+description = "Proof of Gold & Quantum BFT (PoG-QBFT) Consensus Engine for DGX Gold"
+
+[dependencies]
+dgx-quantum = { path = "../dgx-quantum" }
+dgx-core = { path = "../dgx-core" }
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+sha3.workspace = true
+hex.workspace = true
+chrono.workspace = true

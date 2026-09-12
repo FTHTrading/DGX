@@ -1,0 +1,16 @@
+[package]
+name = "dgx-node"
+version = "0.1.0"
+edition = "2021"
+description = "Sovereign Layer 1 Node & JSON-RPC Daemon for DGX Gold"
+
+[dependencies]
+dgx-quantum = { path = "../dgx-quantum" }
+dgx-core = { path = "../dgx-core" }
+dgx-consensus = { path = "../dgx-consensus" }
+dgx-exchange = { path = "../dgx-exchange" }
+tokio.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+chrono.workspace = true
+hex.workspace = true

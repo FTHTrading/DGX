@@ -1,0 +1,14 @@
+[package]
+name = "dgx-core"
+version = "0.1.0"
+edition = "2021"
+description = "Core Ledger State, RWA Physical Bars, In-Ground Reserves & Shielded Balances for DGX Gold L1"
+
+[dependencies]
+dgx-quantum = { path = "../dgx-quantum" }
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+sha3.workspace = true
+hex.workspace = true
+chrono.workspace = true

@@ -1,0 +1,14 @@
+[package]
+name = "dgx-mining-forge"
+version = "0.1.0"
+edition = "2021"
+description = "DGX In-Ground Mining Reserves, Forward Streaming Facilities & Refinery Deliveries"
+
+[dependencies]
+dgx-core = { path = "../dgx-core" }
+dgx-quantum = { path = "../dgx-quantum" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+sha2 = { workspace = true }
+chrono = { workspace = true }
+tokio = { workspace = true }
