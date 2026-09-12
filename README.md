@@ -1,4 +1,4 @@
-# ⚜️ DGX GLOBAL GOLD NETWORK // SOVEREIGN L1 & MINING RWA FORGE
+# [DGX] DGX GLOBAL GOLD NETWORK // SOVEREIGN L1 & MINING RWA FORGE
 ### Institutional Sovereign Blockchain • 5 Autonomous Corporate Spin-Offs • Mine Forward Streaming Engine
 
 ---
@@ -16,36 +16,36 @@
 
 ---
 
-## 📑 Table of Contents
+## [INDEX] Table of Contents
 
-- [⚜️ Executive Ecosystem Overview](#️-executive-ecosystem-overview)
-- [🌳 Architecture & Capital Flow Trees](#-architecture--capital-flow-trees)
+- [[DGX] Executive Ecosystem Overview](#️-executive-ecosystem-overview)
+- [[STRUCTURE] Architecture & Capital Flow Trees](#-architecture--capital-flow-trees)
   - [1. Sovereign Governance & Holding Tree](#1-sovereign-governance--holding-tree)
   - [2. Physical Bullion & Forward Streaming Lifecycle Flow](#2-physical-bullion--forward-streaming-lifecycle-flow)
   - [3. Capital Formation & Investor Return Tree](#3-capital-formation--investor-return-tree)
   - [4. Post-Quantum & Proof-of-Reserves Cryptographic Flow](#4-post-quantum--proof-of-reserves-cryptographic-flow)
-- [🏛️ The 5 Autonomous Hedge Fund Divisions](#️-the-5-autonomous-hedge-fund-divisions)
-  - [🟦 Division 01: DGX Sovereign L1 Network Corp](#-division-01-dgx-sovereign-l1-network-corp)
-  - [🟨 Division 02: DGX Vault Custody SPV](#-division-02-dgx-vault-custody-spv)
-  - [🟩 Division 03: DGX Mining Concessions & Forward Streaming Capital](#-division-03-dgx-mining-concessions--forward-streaming-capital)
-  - [🟪 Division 04: DGX Prime Liquidity & DvP Exchange Desk](#-division-04-dgx-prime-liquidity--dvp-exchange-desk)
-  - [🟩 Division 05: DGX Green Gold ESG & IoT Carbon Labs](#-division-05-dgx-green-gold-esg--iot-carbon-labs)
-- [📂 Repository Directory Map](#-repository-directory-map)
-- [📜 Production Smart Contract Suite](#-production-smart-contract-suite)
-- [⚙️ Sovereign L1 Rust Node Engine](#️-sovereign-l1-rust-node-engine)
-- [📊 Phased Capital Formation Timeline & Spinoff Roadmap](#-phased-capital-formation-timeline--spinoff-roadmap)
-- [🌐 Web Portal & Investor Deck Terminal](#-web-portal--investor-deck-terminal)
-- [📚 Developer Documentation & APIs](#-developer-documentation--apis)
-- [📦 Official Client SDKs](#-official-client-sdks)
-- [🛠️ Operational Runbooks & SOPs](#️-operational-runbooks--sops)
-- [📅 Master 36-Month Timelines & Milestones](#-master-36-month-timelines--milestones)
-- [🚀 Quickstart: Build & Execution](#-quickstart-build--execution)
-- [🛡️ Regulatory & Compliance Perimeter](#️-regulatory--compliance-perimeter)
-- [📄 Commercial License](#-commercial-license)
+- [[STRUCTURE] The 5 Autonomous Hedge Fund Divisions](#️-the-5-autonomous-hedge-fund-divisions)
+  - [[DIVISION 1] Division 01: DGX Sovereign L1 Network Corp](#-division-01-dgx-sovereign-l1-network-corp)
+  - [[DIVISION 2] Division 02: DGX Vault Custody SPV](#-division-02-dgx-vault-custody-spv)
+  - [[DIVISION 3] Division 03: DGX Mining Concessions & Forward Streaming Capital](#-division-03-dgx-mining-concessions--forward-streaming-capital)
+  - [[DIVISION 4] Division 04: DGX Prime Liquidity & DvP Exchange Desk](#-division-04-dgx-prime-liquidity--dvp-exchange-desk)
+  - [[DIVISION 3] Division 05: DGX Green Gold ESG & IoT Carbon Labs](#-division-05-dgx-green-gold-esg--iot-carbon-labs)
+- [ Repository Directory Map](#-repository-directory-map)
+- [[CONTRACTS] Production Smart Contract Suite](#-production-smart-contract-suite)
+- [️ Sovereign L1 Rust Node Engine](#️-sovereign-l1-rust-node-engine)
+- [[DECK] Phased Capital Formation Timeline & Spinoff Roadmap](#-phased-capital-formation-timeline--spinoff-roadmap)
+- [ Web Portal & Investor Deck Terminal](#-web-portal--investor-deck-terminal)
+- [[DOCS] Developer Documentation & APIs](#-developer-documentation--apis)
+- [[PACKAGE] Official Client SDKs](#-official-client-sdks)
+- [[TOOLS] Operational Runbooks & SOPs](#️-operational-runbooks--sops)
+- [[TIMELINE] Master 36-Month Timelines & Milestones](#-master-36-month-timelines--milestones)
+- [[LAUNCH] Quickstart: Build & Execution](#-quickstart-build--execution)
+- [[CUSTODY] Regulatory & Compliance Perimeter](#️-regulatory--compliance-perimeter)
+- [[DOC] Commercial License](#-commercial-license)
 
 ---
 
-## ⚜️ Executive Ecosystem Overview
+## [DGX] Executive Ecosystem Overview
 
 The **DGX Global Gold Network** is an institutional sovereign market-infrastructure operating system engineered specifically for physical bullion banks, mining concession operators, and sovereign allocators.
 
@@ -56,7 +56,7 @@ Unlike retail wrapped-token projects or monolithic smart contracts on congested 
 
 ---
 
-## 🌳 Architecture & Capital Flow Trees
+## [STRUCTURE] Architecture & Capital Flow Trees
 
 ### 1. Sovereign Governance & Holding Tree
 
@@ -70,7 +70,7 @@ Unlike retail wrapped-token projects or monolithic smart contracts on congested 
      │                                 │                                 │
      ▼                                 ▼                                 ▼
 ┌───────────────────────────┐   ┌───────────────────────────┐   ┌───────────────────────────┐
-│ 🟦 DIVISION 01            │   │ 🟨 DIVISION 02            │   │ 🟩 DIVISION 03            │
+│ [DIVISION 1] DIVISION 01            │   │ [DIVISION 2] DIVISION 02            │   │ [DIVISION 3] DIVISION 03            │
 │ DGX Sovereign L1 Corp     │   │ DGX Vault Custody SPV     │   │ DGX Mining Streaming Cap  │
 │ ├─ Proof-of-Gold QBFT     │   │ ├─ Delaware Statutory Tr. │   │ ├─ Upfront Mine CAPEX     │
 │ ├─ Dilithium-3 PQ Sigs    │   │ ├─ Zurich & London Enclave│   │ ├─ $750/oz Delivery Price │
@@ -80,7 +80,7 @@ Unlike retail wrapped-token projects or monolithic smart contracts on congested 
      ├─────────────────────────────────┬─────────────────────────────────┤
      ▼                                 ▼                                 ▼
 ┌───────────────────────────┐   ┌───────────────────────────┐   ┌───────────────────────────┐
-│ 🟪 DIVISION 04            │   │ 🟩 DIVISION 05            │   │ 🌐 REVENUE SETTLEMENT     │
+│ [DIVISION 4] DIVISION 04            │   │ [DIVISION 3] DIVISION 05            │   │  REVENUE SETTLEMENT     │
 │ DGX Prime Exchange Desk   │   │ DGX Green Gold ESG Labs   │   │ Compounding Treasury Loop │
 │ ├─ 1-Sec Atomic DvP Escrow│   │ ├─ IoT Mine Telemetry     │   │ ├─ Streaming Royalties    │
 │ ├─ Institutional RFQ Desk │   │ ├─ Verra / Gold Standard  │   │ ├─ Vaulting Fee Spreads   │
@@ -167,9 +167,9 @@ INVESTOR CAPITAL (SERIES A: $50,000,000)
 
 ---
 
-## 🏛️ The 5 Autonomous Hedge Fund Divisions
+## [STRUCTURE] The 5 Autonomous Hedge Fund Divisions
 
-### 🟦 Division 01: DGX Sovereign L1 Network Corp
+### [DIVISION 1] Division 01: DGX Sovereign L1 Network Corp
 * **Legal Form**: Protocol Operating Corp (Wyoming DAO / Swiss Verein)
 * **Core Technology**: Dedicated sovereign Layer-1 blockchain executing Proof-of-Gold Byzantine Fault Tolerance (PoG-QBFT), 1-second deterministic finality, and post-quantum Dilithium-3 key security.
 * **Target Capitalization**: **$50,000,000**
@@ -178,7 +178,7 @@ INVESTOR CAPITAL (SERIES A: $50,000,000)
 
 ---
 
-### 🟨 Division 02: DGX Vault Custody SPV
+### [DIVISION 2] Division 02: DGX Vault Custody SPV
 * **Legal Form**: Delaware Statutory Trust (12 Del. C. § 3801)
 * **Core Mandate**: Bankruptcy-remote custodial perimeter holding allocated LBMA Good Delivery 400 oz gold bars in Zurich Freezone, London LBMA vaults, and Delaware Depository.
 * **Insurance**: **$1,000,000,000** primary policy through Lloyd's of London syndicates.
@@ -187,7 +187,7 @@ INVESTOR CAPITAL (SERIES A: $50,000,000)
 
 ---
 
-### 🟩 Division 03: DGX Mining Concessions & Forward Streaming Capital
+### [DIVISION 3] Division 03: DGX Mining Concessions & Forward Streaming Capital
 * **Legal Form**: Commercial Royalty Corporation (Cayman / Canadian Mining Corp)
 * **Core Model**: Franco-Nevada & Wheaton Precious Metals royalty architecture. Provides non-dilutive CAPEX to commercial gold mines with verified NI 43-101 reserves in exchange for fixed-price physical delivery at **$750/oz**.
 * **Cash Margin**: **$1,865.00+ / oz** net free cash flow at $2,650 spot gold (70%+ margin).
@@ -196,7 +196,7 @@ INVESTOR CAPITAL (SERIES A: $50,000,000)
 
 ---
 
-### 🟪 Division 04: DGX Prime Liquidity & DvP Exchange Desk
+### [DIVISION 4] Division 04: DGX Prime Liquidity & DvP Exchange Desk
 * **Legal Form**: Institutional Broker-Dealer & Exchange Operator (Abu Dhabi ADGM / US ATS Affiliate)
 * **Core Mandate**: Atomic Delivery-versus-Payment (DvP) smart contract matching engine and institutional RFQ OTC desk for cross-asset clearing (Gold <-> USD, USDC, EUR, BTC) with zero counterparty credit risk.
 * **Revenue Drivers**: 5 to 15 bps exchange transaction fee, prime brokerage liquidity routing.
@@ -204,7 +204,7 @@ INVESTOR CAPITAL (SERIES A: $50,000,000)
 
 ---
 
-### 🟩 Division 05: DGX Green Gold ESG & IoT Carbon Labs
+### [DIVISION 3] Division 05: DGX Green Gold ESG & IoT Carbon Labs
 * **Legal Form**: Ecological Verification LLC
 * **Core Mandate**: Connects IoT sensors at mining concessions to verify clean energy usage and automatically retires Verra/Gold Standard carbon credits to certify ounces as **"Net-Zero Green Bullion"**.
 * **Premium**: **+$25.00 / oz** green bullion institutional market premium.
@@ -212,7 +212,7 @@ INVESTOR CAPITAL (SERIES A: $50,000,000)
 
 ---
 
-## 📂 Repository Directory Map
+##  Repository Directory Map
 
 ```
 DGX/
@@ -261,7 +261,7 @@ DGX/
 
 ---
 
-## 📜 Production Smart Contract Suite
+## [CONTRACTS] Production Smart Contract Suite
 
 | Contract File | Standard | Key Features | Audit Gate |
 | :--- | :--- | :--- | :--- |
@@ -273,7 +273,7 @@ DGX/
 
 ---
 
-## ⚙️ Sovereign L1 Rust Node Engine
+## ️ Sovereign L1 Rust Node Engine
 
 All crates compile under the root workspace [`Cargo.toml`](Cargo.toml):
 
@@ -296,7 +296,7 @@ cargo run -p dgx-node
 
 ---
 
-## 📊 Phased Capital Formation Timeline & Spinoff Roadmap
+## [DECK] Phased Capital Formation Timeline & Spinoff Roadmap
 
 ```
 Phase 1: Genesis & Custody ($50M) ────► Phase 2: Mining Stream Spin-Off ($100M)
@@ -313,7 +313,7 @@ Phase 3: Prime DvP Exchange ($150M) ──► Phase 4: Sovereign IPO ($300M+)
 
 ---
 
-## 🌐 Web Portal & Investor Deck Terminal
+##  Web Portal & Investor Deck Terminal
 
 The [`web/`](web/) directory contains the complete institutional web interface:
 * **Interactive 12-Slide Investor Deck Player**: Playable slide-by-slide presentation with unit economics and funding allocations.
@@ -326,7 +326,7 @@ The [`web/`](web/) directory contains the complete institutional web interface:
 
 ---
 
-## 📚 Developer Documentation & APIs
+## [DOCS] Developer Documentation & APIs
 
 Comprehensive documentation for institutional integration, node operations, and contract interfaces:
 
@@ -337,7 +337,7 @@ Comprehensive documentation for institutional integration, node operations, and 
 
 ---
 
-## 📦 Official Client SDKs
+## [PACKAGE] Official Client SDKs
 
 Pre-built institutional client packages ready for production deployment:
 
@@ -346,7 +346,7 @@ Pre-built institutional client packages ready for production deployment:
 
 ---
 
-## 🛠️ Operational Runbooks & SOPs
+## [TOOLS] Operational Runbooks & SOPs
 
 * **[`operations/NI43_101_CONCESSION_AUDIT_PLAYBOOK.md`](operations/NI43_101_CONCESSION_AUDIT_PLAYBOOK.md)**: Geological reserve evaluation, QP sign-off standards, and 2.5x coverage ratio underwriting.
 * **[`operations/REFINERY_DELIVERY_SOP.md`](operations/REFINERY_DELIVERY_SOP.md)**: Doré transport, Swiss refinery fire assay at Valcambi/PAMP, and serialized Bar Passport enrollment.
@@ -354,14 +354,14 @@ Pre-built institutional client packages ready for production deployment:
 
 ---
 
-## 📅 Master 36-Month Timelines & Milestones
+## [TIMELINE] Master 36-Month Timelines & Milestones
 
 The complete multi-year execution roadmap is detailed in **[`TIMELINES_AND_MILESTONES.md`](TIMELINES_AND_MILESTONES.md)**:
 * **Months 01 – 12 (Phase 1)**: Legal Trust Enclave, $50M Series A, 15k oz Zurich vaulting, L1 Testnet Genesis.
 * **Months 13 – 24 (Phase 2)**: Division 3 Royalty Spin-Off, $100M Streaming Facility, Mines #1-3 online, Net-Zero ESG tracking.
 * **Months 25 – 36 (Phase 3 & 4)**: Division 4 ATS Exchange Desk, BitGo Qualified Custody, TSX/NYSE Dual-Track Public IPO ($300M+ raise, $4B+ vaulted assets).
 
-## 🚀 Quickstart: Build & Execution
+## [LAUNCH] Quickstart: Build & Execution
 
 ```bash
 # 1. Clone the repository
@@ -383,7 +383,7 @@ npx -y serve web/
 
 ---
 
-## 🛡️ Regulatory & Compliance Perimeter
+## [CUSTODY] Regulatory & Compliance Perimeter
 
 * **United States**: Structured under **SEC Regulation D Rule 506(c)** for verified accredited investors and **Regulation S** for offshore capital. UCC Article 8/9 title perfection ensures beneficial ownership of underlying bullion.
 * **Switzerland & Liechtenstein**: Asset-backed payment token backed by physical bullion vaulted in non-SWIFT Zurich Freezones, adhering to FinMA guidelines.
@@ -392,7 +392,7 @@ npx -y serve web/
 
 ---
 
-## 📄 Commercial License
+## [DOC] Commercial License
 
 Copyright © 2026 FTH Trading / UnyKorn LLC. All rights reserved.  
 Licensed under the **Institutional Commercial License** (see [`LICENSE.md`](LICENSE.md)).

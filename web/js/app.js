@@ -17,12 +17,12 @@ window.DignityApp = (function() {
     if (theme === 'light') {
       document.body.classList.remove('theme-dark');
       document.body.classList.add('theme-light');
-      if (themeToggleIcon) themeToggleIcon.innerText = "🌙";
+      if (themeToggleIcon) themeToggleIcon.innerText = "";
       if (themeToggleText) themeToggleText.innerText = "Dark Obsidian";
     } else {
       document.body.classList.remove('theme-light');
       document.body.classList.add('theme-dark');
-      if (themeToggleIcon) themeToggleIcon.innerText = "☀️";
+      if (themeToggleIcon) themeToggleIcon.innerText = "[THEME]";
       if (themeToggleText) themeToggleText.innerText = "Institutional Light";
     }
     localStorage.setItem('dignity_theme', theme);
@@ -67,7 +67,7 @@ window.DignityApp = (function() {
     if (bar) {
       switchView('rwa-forge');
       window.DignityRwaForge.inspectRwa(bar.serial, 'PHYS');
-      showToast(`🔍 Located Allocated Bar: ${bar.serial}`);
+      showToast(` Located Allocated Bar: ${bar.serial}`);
       return;
     }
 
@@ -76,7 +76,7 @@ window.DignityApp = (function() {
     if (c) {
       switchView('rwa-forge');
       window.DignityRwaForge.inspectRwa(c.id, 'RESOURCE');
-      showToast(`🔍 Located In-Ground Concession: ${c.id}`);
+      showToast(` Located In-Ground Concession: ${c.id}`);
       return;
     }
 
@@ -85,20 +85,20 @@ window.DignityApp = (function() {
     if (cb) {
       switchView('rwa-forge');
       window.DignityRwaForge.inspectRwa(cb.id, 'CARBON');
-      showToast(`🔍 Located Tier-1 Carbon Credit: ${cb.id}`);
+      showToast(` Located Tier-1 Carbon Credit: ${cb.id}`);
       return;
     }
 
     // 4. Check if Dev Docs / Smart Contracts query
     if (q.includes('DOC') || q.includes('CONTRACT') || q.includes('ERC') || q.includes('REG') || q.includes('UCC') || q.includes('API') || q.includes('RPC') || q.includes('SDK')) {
       switchView('dev-docs');
-      showToast(`📚 Routed to Developer Hub & Smart Contracts: "${query}"`);
+      showToast(`[DOCS] Routed to Developer Hub & Smart Contracts: "${query}"`);
       return;
     }
 
     // 5. Default: Switch to Explorer and show search confirmation
     switchView('dignityscan');
-    showToast(`🔍 Query "${query}" evaluated against L1 State Index`);
+    showToast(` Query "${query}" evaluated against L1 State Index`);
   }
 
   const searchBtn = document.getElementById('explorerSearchBtn');
@@ -285,7 +285,7 @@ const deckSlides = [
     subtitle: "Sovereign Layer-1 • Mine Forward Streaming Forge • Institutional DvP Bullion Exchange",
     content: `
       <div style="text-align: center; padding: 40px 20px;">
-        <div style="font-size: 64px; margin-bottom: 20px;">⚜</div>
+        <div style="font-size: 64px; margin-bottom: 20px;">[DGX]</div>
         <h1 style="font-size: 36px; font-weight: 800; color: #D4AF37; margin-bottom: 12px;">DGX GLOBAL GOLD NETWORK</h1>
         <p style="font-size: 18px; color: #94a3b8; max-width: 680px; margin: 0 auto 30px;">Institutional Sovereign Market Infrastructure for Physical Bullion, In-Ground Reserves, and Atomic Delivery-versus-Payment (DvP) Settlement.</p>
         <div style="display: inline-flex; gap: 20px; padding: 14px 28px; background: rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.4); border-radius: 30px;">
@@ -328,22 +328,22 @@ const deckSlides = [
     content: `
       <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 30px;">
         <div style="padding: 20px; background: rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.3); border-radius: 10px; text-align: center;">
-          <div style="font-size: 32px; margin-bottom: 10px;">⚡</div>
+          <div style="font-size: 32px; margin-bottom: 10px;">[L1]</div>
           <h4 style="color: #D4AF37; margin-bottom: 6px;">Dedicated L1</h4>
           <p style="color: #94a3b8; font-size: 13px;">10,000+ TPS with 1-sec deterministic finality on Proof-of-Gold QBFT.</p>
         </div>
         <div style="padding: 20px; background: rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.3); border-radius: 10px; text-align: center;">
-          <div style="font-size: 32px; margin-bottom: 10px;">🛡️</div>
+          <div style="font-size: 32px; margin-bottom: 10px;">[CUSTODY]</div>
           <h4 style="color: #D4AF37; margin-bottom: 6px;">Allocated Bullion</h4>
           <p style="color: #94a3b8; font-size: 13px;">Bar-level serialized LBMA 400 oz Good Delivery bars vaulted in Zurich and London.</p>
         </div>
         <div style="padding: 20px; background: rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.3); border-radius: 10px; text-align: center;">
-          <div style="font-size: 32px; margin-bottom: 10px;">⚒️</div>
+          <div style="font-size: 32px; margin-bottom: 10px;">[FORGE]</div>
           <h4 style="color: #D4AF37; margin-bottom: 6px;">Streaming Forge</h4>
           <p style="color: #94a3b8; font-size: 13px;">Underwrites mine CAPEX in exchange for perpetual streams at $750/oz (70%+ margin).</p>
         </div>
         <div style="padding: 20px; background: rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.3); border-radius: 10px; text-align: center;">
-          <div style="font-size: 32px; margin-bottom: 10px;">🔐</div>
+          <div style="font-size: 32px; margin-bottom: 10px;">[SECURITY]</div>
           <h4 style="color: #D4AF37; margin-bottom: 6px;">Post-Quantum</h4>
           <p style="color: #94a3b8; font-size: 13px;">NIST Dilithium-3 lattice signatures and hardware QRNG vacuum entropy beacons.</p>
         </div>
