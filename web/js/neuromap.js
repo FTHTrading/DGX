@@ -198,7 +198,7 @@ function renderMineDetails(mineId) {
       <!-- Why Mine Benefits from Dignity RWA -->
       <div style="margin-bottom: 24px;">
         <h4 style="font-size: 16px; font-weight: 700; color: #D4AF37; margin-bottom: 12px;">HOW THIS MINE BENEFITS FROM DIGNITY RWA PARTNERSHIP:</h4>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+        <div class="neuromap-benefits-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
           ${mine.benefits.map((b, i) => `
             <div style="padding: 12px 16px; background: rgba(0,0,0,0.3); border-left: 3px solid #D4AF37; border-radius: 6px; font-size: 13px; color: #e2e8f0; line-height: 1.5;">
               <strong style="color: #D4AF37;">Benefit ${i+1}:</strong> ${b}

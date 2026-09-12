@@ -17,7 +17,7 @@ window.DignityApp = (function() {
     if (theme === 'light') {
       document.body.classList.remove('theme-dark');
       document.body.classList.add('theme-light');
-      if (themeToggleIcon) themeToggleIcon.innerText = "";
+      if (themeToggleIcon) themeToggleIcon.innerText = "[LIGHT]";
       if (themeToggleText) themeToggleText.innerText = "Dark Obsidian";
     } else {
       document.body.classList.remove('theme-light');
@@ -39,11 +39,38 @@ window.DignityApp = (function() {
     });
   }
 
-  // View Navigation
-  function switchView(viewName) {
-    const tabs = document.querySelectorAll('.nav-tab');
-    const panels = document.querySelectorAll('.view-panel');
+  // Mobile Drawer Toggle Logic
+  function openMobileDrawer() {
+    const drawer = document.getElementById('mobileAppDrawer');
+    const overlay = document.getElementById('mobileDrawerOverlay');
+    if (drawer) drawer.classList.add('open');
+    if (overlay) overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
 
+  function closeMobileDrawer() {
+    const drawer = document.getElementById('mobileAppDrawer');
+    const overlay = document.getElementById('mobileDrawerOverlay');
+    if (drawer) drawer.classList.remove('open');
+    if (overlay) overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function toggleMobileDrawer() {
+    const drawer = document.getElementById('mobileAppDrawer');
+    if (drawer && drawer.classList.contains('open')) {
+      closeMobileDrawer();
+    } else {
+      openMobileDrawer();
+    }
+  }
+
+  // View Navigation — Synchronizes Desktop Subnav, Mobile Drawer & Mobile Bottom App Bar
+  function switchView(viewName) {
+    if (!viewName) return;
+
+    // 1. Desktop & iPad Subnav Tabs
+    const tabs = document.querySelectorAll('.nav-tab');
     tabs.forEach(t => {
       const match = t.getAttribute('data-view') === viewName;
       t.classList.toggle('active', match);
@@ -52,17 +79,44 @@ window.DignityApp = (function() {
       }
     });
 
-    panels.forEach(p => {
-      p.classList.toggle('active', p.id === `view-${viewName}`);
+    // 2. Mobile Drawer Navigation Items
+    const drawerItems = document.querySelectorAll('.drawer-nav-item');
+    drawerItems.forEach(item => {
+      const match = item.getAttribute('data-view') === viewName;
+      item.classList.toggle('active', match);
     });
 
+    // 3. Mobile Bottom App Bar Tabs
+    const bottomTabs = document.querySelectorAll('.bottom-nav-tab');
+    bottomTabs.forEach(tab => {
+      const match = tab.getAttribute('data-view') === viewName;
+      tab.classList.toggle('active', match);
+    });
+
+    // 4. View Panels
+    const panels = document.querySelectorAll('.view-panel');
+    let targetPanel = null;
+    panels.forEach(p => {
+      const isTarget = p.id === `view-${viewName}`;
+      p.classList.toggle('active', isTarget);
+      if (isTarget) targetPanel = p;
+    });
+
+    // 5. Special View Initializations
     if (viewName === 'neuromap' && typeof initNeuromap === 'function') {
       initNeuromap();
     }
+
+    // 6. Close mobile drawer if open
+    closeMobileDrawer();
+
+    // 7. Smoothly scroll to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  // Bind click listener to all tabs
+  // Bind All Navigation Listeners on DOM Ready
   document.addEventListener('DOMContentLoaded', () => {
+    // Desktop Subnav Tabs
     document.querySelectorAll('.nav-tab').forEach(tab => {
       tab.addEventListener('click', (e) => {
         e.preventDefault();
@@ -70,12 +124,75 @@ window.DignityApp = (function() {
         if (view) switchView(view);
       });
     });
-  });
 
-  navTabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      const view = tab.getAttribute('data-view');
-      switchView(view);
+    // Mobile Drawer Items
+    document.querySelectorAll('.drawer-nav-item').forEach(item => {
+      item.addEventListener('click', (e) => {
+        e.preventDefault();
+        const view = item.getAttribute('data-view');
+        if (view) switchView(view);
+      });
+    });
+
+    // Mobile Bottom App Bar Tabs
+    document.querySelectorAll('.bottom-nav-tab').forEach(tab => {
+      tab.addEventListener('click', (e) => {
+        e.preventDefault();
+        const view = tab.getAttribute('data-view');
+        if (view) {
+          switchView(view);
+        } else if (tab.id === 'bottomNavMenuBtn') {
+          toggleMobileDrawer();
+        }
+      });
+    });
+
+    // Mobile Hamburger Menu Button
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        toggleMobileDrawer();
+      });
+    }
+
+    // Drawer Close Button
+    const drawerCloseBtn = document.getElementById('drawerCloseBtn');
+    if (drawerCloseBtn) {
+      drawerCloseBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        closeMobileDrawer();
+      });
+    }
+
+    // Drawer Backdrop Overlay
+    const mobileDrawerOverlay = document.getElementById('mobileDrawerOverlay');
+    if (mobileDrawerOverlay) {
+      mobileDrawerOverlay.addEventListener('click', () => {
+        closeMobileDrawer();
+      });
+    }
+
+    // Subnav Horizontal Scroll Arrows
+    const mainNav = document.getElementById('mainNav');
+    const scrollLeftBtn = document.getElementById('subnavScrollLeft');
+    const scrollRightBtn = document.getElementById('subnavScrollRight');
+
+    if (mainNav && scrollLeftBtn) {
+      scrollLeftBtn.addEventListener('click', () => {
+        mainNav.scrollBy({ left: -240, behavior: 'smooth' });
+      });
+    }
+
+    if (mainNav && scrollRightBtn) {
+      scrollRightBtn.addEventListener('click', () => {
+        mainNav.scrollBy({ left: 240, behavior: 'smooth' });
+      });
+    }
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMobileDrawer();
     });
   });
 
