@@ -261,6 +261,39 @@ DGX/
 
 ---
 
+## [START HERE] For the Dignity team — what this can actually do
+
+Four documents, written to be read in this order. They describe what the code
+enforces, what it cannot enforce, and what stands between it and production.
+
+| Document | Answers |
+|---|---|
+| [`docs/TOKEN-FLOW.md`](docs/TOKEN-FLOW.md) | Subscription to redemption, hop by hop, naming the contract that enforces each step |
+| [`docs/CAPABILITY-MATRIX.md`](docs/CAPABILITY-MATRIX.md) | What a contract CAN enforce vs what no Solidity will ever do |
+| [`docs/INTEGRATION.md`](docs/INTEGRATION.md) | Deploy order, role assignments, and the traps that cost real time |
+| [`docs/GO-LIVE.md`](docs/GO-LIVE.md) | The five blockers, with time and cost ranges |
+
+### Two contract families, different maturity
+
+| Family | Path | Job | Tests |
+|---|---|---|---|
+| Capital markets | [`contracts-capital-markets/`](contracts-capital-markets/) | Eligibility, tranching, waterfall, document anchoring | **78 passing** |
+| DGX native | [`contracts/`](contracts/) | Bar passporting, concession streaming, DvP, reserves oracle | **2 passing** |
+
+### Audit status
+
+**No third-party audit exists on any contract in this repository.** Not Trail
+of Bits, Spearbit, Quantstamp, OpenZeppelin, or anyone else. 78 passing tests
+including fuzz coverage is engineering evidence; it is not an audit and does
+not substitute for one.
+
+If any document in an offering pack cites audits by Centrifuge, Maple, Ondo or
+Goldfinch — those cover *those protocols*, not this code. The offering runs
+under Reg D 506(c), which is general solicitation, so the disclosure standard
+is not relaxed.
+
+---
+
 ## [CONTRACTS] Production Smart Contract Suite
 
 | Contract File | Standard | Key Features | Audit Gate |
